@@ -39,3 +39,11 @@ html {
   border-radius: 30px;
   border: 0px solid;
 }
+
+.banner {
+  background-image: url("../images/banner-homepage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 900px;
+  background-position: center;
+}
