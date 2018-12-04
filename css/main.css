@@ -1,0 +1,31 @@
+html {
+  font-family: Lato, sans-serif;
+}
+
+.darkorange {
+  color: #Eb7808;
+}
+
+.lightorange {
+  color: #E8984A;
+}
+
+.lightblue {
+  color: #87C6F8;
+}
+
+.medblue {
+  color: #4591CF;
+}
+
+.darkblue {
+  color: #1869AC;
+}
+
+.orggrad {
+  background-image: linear-gradient(#Eb7808, #E8984A);
+}
+
+.whitetext {
+  color: #fff;
+}
