@@ -44,6 +44,6 @@ html {
   background-image: url("../images/banner-homepage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 900px;
+  height: 70vh;
   background-position: center;
 }
