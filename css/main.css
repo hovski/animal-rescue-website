@@ -22,6 +22,10 @@ html {
   color: #1869AC;
 }
 
+.bluegrad {
+  background-image: linear-gradient(#1869AC, #87C6F8);
+}
+
 .orggrad {
   background-image: linear-gradient(#Eb7808, #E8984A);
 }
@@ -46,4 +50,49 @@ html {
   background-repeat: no-repeat;
   height: 70vh;
   background-position: center;
+}
+
+.banner-2 {
+  background-image: url("../images/banner-adoptpage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-position: center;
+}
+
+.banner-3 {
+  background-image: url("../images/banner-processpage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-position: center;
+}
+
+.formbkg {
+  background-color: #1869AC;
+}
+
+.formpage {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+input,
+select {
+  border-color: #87C6F8;
+  border-radius: 4px;
+}
+
+[type="checkbox"] + label::before,
+[type="radio"] + label::before {
+  border-color: #87C6F8;
+  border-radius: 4px;
+}
+
+.pad-r {
+  padding-right: .5rem;
+}
+
+.pad-l {
+  padding-left: .5rem;
 }
