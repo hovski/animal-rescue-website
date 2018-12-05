@@ -44,6 +44,24 @@ html {
   border: 0px solid;
 }
 
+.btn:hover {
+  background-color: #1869AC;
+}
+
+.current {
+  color: #Eb7808;
+  font-weight: bold;
+}
+
+li a {
+  color: #87C6F8;
+}
+
+li a:hover,
+li a:focus {
+  color: #1869AC;
+}
+
 .banner {
   background-image: url("../images/banner-homepage.jpg");
   background-size: cover;
