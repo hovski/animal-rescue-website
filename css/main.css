@@ -23,7 +23,7 @@ html {
 }
 
 .bluegrad {
-  background-image: linear-gradient(#1869AC, #87C6F8);
+  background-image: linear-gradient(#4591CF, #87C6F8);
 }
 
 .orggrad {
@@ -113,4 +113,78 @@ select {
 
 .pad-l {
   padding-left: .5rem;
+}
+
+.halfsize {
+  width: 25%;
+}
+
+.bkgcolorblue {
+  background-color: #1869AC;
+}
+
+.bkgroundwhite {
+  background-color: #fff;
+}
+
+.fixdiv {
+  width: 48%;
+}
+
+.hoverorg-1 {
+  background-image: url(../images/dog-1.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: top center;
+  display: block;
+  position: relative;
+}
+
+.hoverorg-2 {
+  background-image: url(../images/dog-2.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: top center;
+  display: block;
+  position: relative;
+}
+
+.hoverorg-3 {
+  background-image: url(../images/dog-3.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+}
+
+.hoverorg-4 {
+  background-image: url(../images/dog-4.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+}
+.hoverorg-5 {
+  background-image: url(../images/dog-5.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: top center;
+  display: block;
+  position: relative;
+}
+
+.hoverorg-6 {
+  background-image: url(../images/dog-6.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: top center;
+  display: block;
+  position: relative;
+}
+
+.hoverorg-2:hover {
+  background-color: rgba(54, 54, 137, .5);
+  transition: all .25s;
 }
