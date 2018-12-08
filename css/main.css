@@ -3,31 +3,35 @@ html {
 }
 
 .darkorange {
-  color: #Eb7808;
+  color: #eb7808;
 }
 
 .lightorange {
-  color: #E8984A;
+  color: #e8984a;
 }
 
 .lightblue {
-  color: #87C6F8;
+  color: #87c6f8;
 }
 
 .medblue {
-  color: #4591CF;
+  color: #4591cf;
 }
 
 .darkblue {
-  color: #1869AC;
+  color: #1869ac;
+}
+
+.heading-size {
+  margin: 1em;
 }
 
 .bluegrad {
-  background-image: linear-gradient(#4591CF, #87C6F8);
+  background-image: linear-gradient(#4591cf, #87c6f8);
 }
 
 .orggrad {
-  background-image: linear-gradient(#Eb7808, #E8984A);
+  background-image: linear-gradient(#eb7808, #e8984a);
 }
 
 .whitetext {
@@ -39,34 +43,36 @@ html {
 }
 
 .btn {
-  background-color: #Eb7808;
+  background-color: #eb7808;
   border-radius: 30px;
   border: 0px solid;
 }
 
 .btn:hover {
-  background-color: #1869AC;
+  /* background-color: #1869ac; */
+  background-color: #000;
 }
 
 .current {
-  color: #Eb7808;
-  font-weight: bold;
+  /* color: #eb7808; */
+  color: #000;
 }
 
 li a {
-  color: #87C6F8;
+  color: #87c6f8;
 }
 
 li a:hover,
 li a:focus {
-  color: #1869AC;
+  /* color: #1869ac; */
+  color: #000;
 }
 
 .banner {
   background-image: url("../images/banner-homepage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 80vh;
   background-position: center;
 }
 
@@ -74,20 +80,30 @@ li a:focus {
   background-image: url("../images/banner-adoptpage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 70vh;
-  background-position: center;
+  height: 80vh;
+  background-position: top left;
 }
 
 .banner-3 {
   background-image: url("../images/banner-processpage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 80vh;
   background-position: center;
 }
 
+.max-width {
+  max-width: 22em;
+  margin: auto;
+}
+
 .formbkg {
-  background-color: #1869AC;
+  background-color: #1869ac;
+}
+
+.i-size {
+  height: 32px;
+  width: 32px;
 }
 
 .formpage {
@@ -97,13 +113,13 @@ li a:focus {
 
 input,
 select {
-  border-color: #87C6F8;
+  border-color: #87c6f8;
   border-radius: 4px;
 }
 
 [type="checkbox"] + label::before,
 [type="radio"] + label::before {
-  border-color: #87C6F8;
+  border-color: #87c6f8;
   border-radius: 4px;
 }
 
@@ -120,71 +136,46 @@ select {
 }
 
 .bkgcolorblue {
-  background-color: #1869AC;
+  background-color: #1869ac;
 }
 
 .bkgroundwhite {
   background-color: #fff;
 }
 
-.fixdiv {
-  width: 48%;
+a.dog-hover:hover:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(235, 120, 8, .3), rgba(235, 120, 8, .6));
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.hoverorg-1 {
-  background-image: url(../images/dog-1.jpg);
-  height: 500px;
-  background-size: cover;
-  background-position: top center;
-  display: block;
-  position: relative;
+.img-container {
+  overflow: hidden;
 }
 
-.hoverorg-2 {
-  background-image: url(../images/dog-2.jpg);
-  height: 500px;
-  background-size: cover;
-  background-position: top center;
-  display: block;
-  position: relative;
+.wrapper {
+  max-width: 53em;
 }
 
-.hoverorg-3 {
-  background-image: url(../images/dog-3.jpg);
-  height: 500px;
-  background-size: cover;
-  background-position: center;
-  display: block;
-  position: relative;
-}
+@media only screen and (min-width: 60em) {
 
-.hoverorg-4 {
-  background-image: url(../images/dog-4.jpg);
-  height: 500px;
-  background-size: cover;
-  background-position: center;
-  display: block;
-  position: relative;
-}
-.hoverorg-5 {
-  background-image: url(../images/dog-5.jpg);
-  height: 500px;
-  background-size: cover;
-  background-position: top center;
-  display: block;
-  position: relative;
-}
+  .max-width {
+    max-width: 30em;
+    margin: auto;
+  }
 
-.hoverorg-6 {
-  background-image: url(../images/dog-6.jpg);
-  height: 500px;
-  background-size: cover;
-  background-position: top center;
-  display: block;
-  position: relative;
-}
+  .heading-size {
+    margin: 0;
+  }
 
-.hoverorg-2:hover {
-  background-color: rgba(54, 54, 137, .5);
-  transition: all .25s;
+  .i-size {
+    height: 48px;
+    width: 48px;
+  }
+
 }

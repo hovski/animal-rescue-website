@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Process</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon-196.png">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
@@ -12,7 +14,12 @@
 </head>
 <body>
 
-  <header class="grid grid-middle">
+  <ul class="skip-links">
+    <li><a href="#nav">Jump to nav</a></li>
+    <li><a href="#main">Jump to main</a></li>
+  </ul>
+
+  <header role="banner" class="grid grid-middle heading-size" tabindex="0">
 
     <div class=" unit xs-0 s-0 m-1-4 l-1-4 halfsize">
       <a href="index.html">
@@ -20,7 +27,7 @@
       </a>
     </div>
 
-    <nav class="unit xs-1 s-1 m-3-4 l-3-4">
+    <nav role="navigation" id="nav" class="unit xs-1 s-1 m-3-4 l-3-4">
       <ul class="list-group-inline text-right push-0 pad-r">
         <li><a class="link-box milli gutter-1-2" href="index.html">Home</a></li>
         <li><a class="link-box milli gutter-1-2 current" href="adopt.html">Process</a></li>
@@ -29,225 +36,222 @@
     </nav>
   </header>
 
-<main>
-  <section class="banner-3">
-    <div class="pin-l max-length gutter-2 island-2 right fixdiv pad-b">
-      <h1 class="peta greytext max-length">Adoption Process</h1>
-      <p class="milli greytext push-0">1. Fill out our adoption application and send it back to us through email.</p>
-      <p class="milli greytext push-0">2. SitWithMe volunteers will review and arrange a phone call to talk to you about the process.</p>
-      <p class="milli greytext push-0">3. We do a home visit to see if you’re a good fit for the dog.</p>
-      <p class="milli greytext push-0">4. A trial will happen to ensure the dog fits into your family. This happens typically in one week.</p>
-      <p class="milli greytext push-0">5. Adoption contract will be signed and the adoption fee will be paid in full.</p>
-      <div class="pad-t pad-b-2">
-        <a class="text-center btn micro gutter bold" href="#">Learn More</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="formbkg island-2">
-    <div class="formpage island wrapper">
-
-      <form class="wrapper gutter-1-2 island" method="post" action="https://formspree.io/pand0025@algonquinlive.com">
-        <fieldset class="pad-b push-1-4">
-          <legend class="push-1-4 giga">Personal details</legend>
-          <div class="grid pad-t">
-            <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-r">
-              <label class="push-1-8 milli" for="name">Full name</label>
-              <input class="push-1-8 pad-r" id="name" name="name" required>
-            </div>
-            <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-l">
-              <label class="push-1-8 milli" for="call">Adoption Number</label>
-              <input class="push-1-8" id="call" name="call" required>
-            </div>
-            <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-r">
-              <label class="push-1-8 milli" for="date">Date of birth</label>
-              <input class="push-1-8" id="date" type="date" name="date" required>
-            </div>
-            <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-l">
-              <label class="push-1-8 milli" for="experiences">Do you have any experience with dogs?</label>
-              <select class="push-1-8" id="experiences" name="experiences">
-                <option value="">Select an option</option>
-                <option>No, but I've always wanted one.</option>
-                <option>No, but I've spent lots of time with them.</option>
-                <option>Yes, I used to have one.</option>
-                <option>Yes, I currently own one.</option>
-                <option>Yes, I have more than one.</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-r">
-              <label class="push-1-8 milli" for="email">Email</label>
-              <input class="push-1-8" id="email" type="email" name="email" required>
-            </div>
-            <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-l">
-              <label class="push-1-8 milli" for="tel">Phone number <span class="lightorange bold">(optional)</span></label>
-              <input id="tel" type="tel" name="tel" required>
-            </div>
-          </div>
-        </fieldset>
-        <hr class="push-2">
-        <fieldset class="push-1-4 pad-b">
-          <legend class="push-1-4 giga">Address</legend>
-          <div class="grid pad-t">
-            <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-r">
-              <label class="push-1-8 milli" for="address">Street address</label>
-              <input class="push-1-2" id="address" name="address" required>
-            </div>
-            <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-l">
-              <label class="push-1-8 milli" for="city">City</label>
-              <input class="push-1-2" id="city" name="city" required>
-            </div>
-            <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-r">
-              <label class="push-1-8 milli" for="province">Province</label>
-              <select class="push-1-2" id="province" name="province">
-                <option value="">Select a province</option>
-                <option>Alberta</option>
-                <option>British Columbia</option>
-                <option>Manitoba</option>
-                <option>New Brunswick</option>
-                <option>Newfoundland & Labrador</option>
-                <option>Northwest Territories</option>
-                <option>Nova Scotia</option>
-                <option>Nunavut</option>
-                <option>Ontario</option>
-                <option>Prince Edward Island</option>
-                <option>Québec</option>
-                <option>Saskatchewan</option>
-                <option>Yukon</option>
-              </select>
-            </div>
-            <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-l">
-              <label class="push-1-8 milli" for="postal">Postal code</label>
-              <input class="push-1-2" id="postal" name="postal" required>
-            </div>
-          </div>
-        </fieldset>
-        <hr class="push-2">
-
-        <fieldset class="push-1-8 pad-b-2">
-          <legend class="giga push-1-2">Do you own any of the following supplies needed to care for our dogs?</legend>
-          <div class="grid pad-t-1-4">
-            <div class="unit push xs-1 s-1 m-1-2 l-1-2">
-              <div class="push-1-4">
-                <input id="leash" type="checkbox" name="leash" required>
-                <label for="leash">Leash</label>
-              </div>
-              <div class="push-1-4">
-                <input id="collar" type="checkbox" name="collar" required>
-                <label for="collar">Collar</label>
-              </div>
-              <div class="push-1-4">
-                <input id="dog-tag" type="checkbox" name="dog-tag" required>
-                <label for="dog-tag">Dog Tags</label>
-              </div>
-              <div class="push-1-4">
-                <input id="food" type="checkbox" name="food" required>
-                <label for="food">Food</label>
-              </div>
-            </div>
-            <div class="unit push xs-1 s-1 m-1-2 l-1-2">
-              <div class="push-1-4">
-                <input id="dishes" type="checkbox" name="dishes" required>
-                <label for="dishes">Dog Dishes</label>
-              </div>
-              <div class="push-1-4">
-                <input id="crate" type="checkbox" name="crate" required>
-                <label for="crate">Crate</label>
-              </div>
-              <div class="push-1-4">
-                <input id="tugtoy" type="checkbox" name="tugtoy" required>
-                <label for="tugtoy">Toys</label>
-              </div>
-              <div class="push-1-4">
-                <input id="blankie" type="checkbox" name="blankie" required>
-                <label for="blankie">Blankets</label>
-              </div>
-            </div>
-          </div>
-        </fieldset>
-        <hr class="push-2">
-        <fieldset>
-          <legend class="pad-b-1-8 giga push-1-4">Do you have a valid driver’s license?</legend>
-          <div class="push">
-            <input id="validy" type="radio" name="driverlice" required>
-            <label class="push-r-1-2" for="validy">Yes</label>
-            <input id="validn" type="radio" name="driverlice" required>
-            <label class="gutter" for="validn">No</label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend class="push-1-4 giga pad-b-1-8 pad-t-1-8">Are you currently employed?</legend>
-          <div class="push">
-            <input id="validye" type="radio" name="employeeed" required>
-            <label class="push-r-1-2" for="validye">Yes</label>
-            <input id="validne" type="radio" name="employeeed" required>
-            <label class="gutter" for="validne">No</label>
-          </div>
-        </fieldset>
-        <fieldset class="push-2">
-          <legend class="giga push-1-4 pad-b-1-8 pad-t-1-8">Have you ever adopted another animal before?</legend>
-          <div>
-            <div>
-              <input id="validyeq" type="radio" name="dogbef" required>
-              <label class="push-r-1-2" for="validyeq">Yes</label>
-              <input id="validneq" type="radio" name="dogbef" required>
-              <label class="gutter" for="validneq">No</label>
-            </div>
-          </div>
-        </fieldset>
-        <hr class="push-2">
-        <fieldset class="push-2">
-          <legend class="giga push-1-2">Please let us know more about you so we can process your adoption papers. <span class="lightorange">(optional)</span></legend>
-          <div>
-            <textarea id="questions" name="questions" required></textarea>
-          </div>
-        </fieldset>
-        <hr>
-        <div class="text-center pad-t pad-b">
-          <button class=" giga btn gutter-2" type="submit">Apply</button>
+  <main id="main" role="main" tabindex="0">
+    <section class="banner-3 embed embed-16by9">
+      <article class="pad-t-2 pin-cl gutter-2 max-width right pad-b embed-item">
+        <h1 class="pad-t-2 peta greytext max-length">Adoption Process</h1>
+        <p class="milli greytext push-0">1. Fill out our adoption application and send it back to us through email.</p>
+        <p class="milli greytext push-0">2. SitWithMe volunteers will review and arrange a phone call to talk to you about the process.</p>
+        <p class="milli greytext push-0">3. We do a home visit to see if you’re a good fit for the dog.</p>
+        <p class="milli greytext push-0">4. A trial will happen to ensure the dog fits into your family. This happens typically in one week.</p>
+        <p class="milli greytext push-0">5. Adoption contract will be signed and the adoption fee will be paid in full.</p>
+        <div class="pad-t pad-b-2">
+          <a class="text-center btn micro gutter bold" href="#">Learn More</a>
         </div>
-      </form>
+      </article>
+    </section>
+
+    <section class="formbkg island-2">
+      <div class="formpage island wrapper">
+
+        <form class="wrapper gutter-1-2 island" method="post" action="https://formspree.io/pand0025@algonquinlive.com">
+          <fieldset class="pad-b push-1-4">
+            <legend class="push-1-4 giga">Personal details</legend>
+            <div class="grid pad-t">
+              <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-r">
+                <label class="push-1-8 milli" for="name">Full name</label>
+                <input class="push-1-8 pad-r" id="name" name="name" required>
+              </div>
+              <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-l">
+                <label class="push-1-8 milli" for="call">Adoption Number</label>
+                <input class="push-1-8" id="call" name="call" required>
+              </div>
+              <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-r">
+                <label class="push-1-8 milli" for="date">Date of birth</label>
+                <input class="push-1-8" id="date" type="date" name="date" required>
+              </div>
+              <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-l">
+                <label class="push-1-8 milli" for="experiences">Do you have any experience with dogs?</label>
+                <select class="push-1-8" id="experiences" name="experiences">
+                  <option value="">Select an option</option>
+                  <option>No, but I've always wanted one.</option>
+                  <option>No, but I've spent lots of time with them.</option>
+                  <option>Yes, I used to have one.</option>
+                  <option>Yes, I currently own one.</option>
+                  <option>Yes, I have more than one.</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-r">
+                <label class="push-1-8 milli" for="email">Email</label>
+                <input class="push-1-8" id="email" type="email" name="email" required>
+              </div>
+              <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-l">
+                <label class="push-1-8 milli" for="tel">Phone number <span class="lightorange bold">(optional)</span></label>
+                <input id="tel" type="tel" name="tel" required>
+              </div>
+            </div>
+          </fieldset>
+          <hr class="push-2">
+          <fieldset class="push-1-4 pad-b">
+            <legend class="push-1-4 giga">Address</legend>
+            <div class="grid pad-t">
+              <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-r">
+                <label class="push-1-8 milli" for="address">Street address</label>
+                <input class="push-1-2" id="address" name="address" required>
+              </div>
+              <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-l">
+                <label class="push-1-8 milli" for="city">City</label>
+                <input class="push-1-2" id="city" name="city" required>
+              </div>
+              <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-r">
+                <label class="push-1-8 milli" for="province">Province</label>
+                <select class="push-1-2" id="province" name="province">
+                  <option value="">Select a province</option>
+                  <option>Alberta</option>
+                  <option>British Columbia</option>
+                  <option>Manitoba</option>
+                  <option>New Brunswick</option>
+                  <option>Newfoundland & Labrador</option>
+                  <option>Northwest Territories</option>
+                  <option>Nova Scotia</option>
+                  <option>Nunavut</option>
+                  <option>Ontario</option>
+                  <option>Prince Edward Island</option>
+                  <option>Québec</option>
+                  <option>Saskatchewan</option>
+                  <option>Yukon</option>
+                </select>
+              </div>
+              <div class="unit push xs-1 s-1 m-1-2 l-1-2 pad-l">
+                <label class="push-1-8 milli" for="postal">Postal code</label>
+                <input class="push-1-2" id="postal" name="postal" required>
+              </div>
+            </div>
+          </fieldset>
+          <hr class="push-2">
+
+          <fieldset class="push-1-8 pad-b-2">
+            <legend class="giga push-1-2">Do you own any of the following supplies needed to care for our dogs?</legend>
+            <div class="grid pad-t-1-4">
+              <div class="unit push xs-1 s-1 m-1-2 l-1-2">
+                <div class="push-1-4">
+                  <input id="leash" type="checkbox" name="leash" required>
+                  <label for="leash">Leash</label>
+                </div>
+                <div class="push-1-4">
+                  <input id="collar" type="checkbox" name="collar" required>
+                  <label for="collar">Collar</label>
+                </div>
+                <div class="push-1-4">
+                  <input id="dog-tag" type="checkbox" name="dog-tag" required>
+                  <label for="dog-tag">Dog Tags</label>
+                </div>
+                <div class="push-1-4">
+                  <input id="food" type="checkbox" name="food" required>
+                  <label for="food">Food</label>
+                </div>
+              </div>
+              <div class="unit push xs-1 s-1 m-1-2 l-1-2">
+                <div class="push-1-4">
+                  <input id="dishes" type="checkbox" name="dishes" required>
+                  <label for="dishes">Dog Dishes</label>
+                </div>
+                <div class="push-1-4">
+                  <input id="crate" type="checkbox" name="crate" required>
+                  <label for="crate">Crate</label>
+                </div>
+                <div class="push-1-4">
+                  <input id="tugtoy" type="checkbox" name="tugtoy" required>
+                  <label for="tugtoy">Toys</label>
+                </div>
+                <div class="push-1-4">
+                  <input id="blankie" type="checkbox" name="blankie" required>
+                  <label for="blankie">Blankets</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <hr class="push-2">
+          <fieldset>
+            <legend class="pad-b-1-8 giga push-1-4">Do you have a valid driver’s license?</legend>
+            <div class="push">
+              <input id="validy" type="radio" name="driverlice" required>
+              <label class="push-r-1-2" for="validy">Yes</label>
+              <input id="validn" type="radio" name="driverlice" required>
+              <label class="gutter" for="validn">No</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="push-1-4 giga pad-b-1-8 pad-t-1-8">Are you currently employed?</legend>
+            <div class="push">
+              <input id="validye" type="radio" name="employeeed" required>
+              <label class="push-r-1-2" for="validye">Yes</label>
+              <input id="validne" type="radio" name="employeeed" required>
+              <label class="gutter" for="validne">No</label>
+            </div>
+          </fieldset>
+          <fieldset class="push-2">
+            <legend class="giga push-1-4 pad-b-1-8 pad-t-1-8">Have you ever adopted another animal before?</legend>
+            <div>
+              <div>
+                <input id="validyeq" type="radio" name="dogbef" required>
+                <label class="push-r-1-2" for="validyeq">Yes</label>
+                <input id="validneq" type="radio" name="dogbef" required>
+                <label class="gutter" for="validneq">No</label>
+              </div>
+            </div>
+          </fieldset>
+          <hr class="push-2">
+          <fieldset class="push-2">
+            <legend class="giga push-1-2">Please let us know more about you so we can process your adoption papers. <span class="lightorange">(optional)</span></legend>
+            <div>
+              <textarea id="questions" name="questions" required></textarea>
+            </div>
+          </fieldset>
+          <hr>
+          <div class="text-center pad-t pad-b">
+            <button class=" giga btn gutter-2" type="submit">Apply</button>
+          </div>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo" class="grid grid-middle">
+    <div class="unit xs-1-2 s-1-2 m-1-2 l-1-2">
+      <small class="gutter micro">SitWithMe ©2018</small>
+    </div>
+
+    <div class="unit xs-1-2 s-1-2 m-1-2 l-1-2 text-right pad-r">
+
+      <ul class="list-group-inline island push-0">
+        <li>
+          <i class="icon i-size">
+            <a href="#">
+              <img class="img-flex" src="images/facebook.svg" alt="">
+            </a>
+          </i>
+        </li>
+        <li class="gutter-1-2">
+          <i class="icon i-size">
+            <a href="#">
+              <img class="img-flex" src="images/twitter.svg" alt="">
+            </a>
+          </i>
+        </li>
+        <li>
+          <i class="icon i-size">
+            <a href="#">
+              <img class="img-flex" src="images/instagram.svg" alt="">
+            </a>
+          </i>
+        </li>
+      </ul>
 
     </div>
-  </section>
-</main>
-
-
-
-
-<footer class="grid grid-middle">
-  <div class="unit xs-1-2 s-1-2 m-1-2 l-1-2">
-    <small class="gutter micro">SitWithMe ©2018</small>
-  </div>
-
-  <div class="unit xs-1-2 s-1-2 m-1-2 l-1-2 text-right pad-r">
-
-    <ul class="list-group-inline island push-0">
-      <li class="pad-r">
-        <i class="icon i-48">
-          <a href="#">
-            <img class="img-flex" src="images/facebook.svg" alt="">
-          </a>
-        </i>
-      </li>
-      <li class="pad-r">
-        <i class="icon i-48">
-          <a href="#">
-            <img class="img-flex" src="images/twitter.svg" alt="">
-          </a>
-        </i>
-      </li>
-      <li>
-        <i class="icon i-48">
-          <a href="#">
-            <img class="img-flex" src="images/instagram.svg" alt="">
-          </a>
-        </i>
-      </li>
-    </ul>
-
-  </div>
-</footer>
+  </footer>
 
 </body>
 </html>

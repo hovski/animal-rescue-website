@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Adoptable</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon-196.png">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
@@ -12,7 +14,12 @@
 </head>
 <body>
 
-  <header class="grid grid-middle">
+  <ul class="skip-links">
+    <li><a href="#nav">Jump to nav</a></li>
+    <li><a href="#main">Jump to main</a></li>
+  </ul>
+
+  <header role="banner" class="grid grid-middle heading-size">
 
     <div class=" unit xs-0 s-0 m-1-4 l-1-4 halfsize">
       <a href="index.html">
@@ -20,7 +27,7 @@
       </a>
     </div>
 
-    <nav class="unit xs-1 s-1 m-3-4 l-3-4">
+    <nav role="navigation" id="nav" class="unit xs-1 s-1 m-3-4 l-3-4">
       <ul class="list-group-inline text-right push-0 pad-r">
         <li><a class="link-box milli gutter-1-2" href="index.html">Home</a></li>
         <li><a class="link-box milli gutter-1-2" href="adopt.html">Process</a></li>
@@ -29,122 +36,128 @@
     </nav>
   </header>
 
-<main>
-  <section class="banner-2">
-    <div class="pin-l max-length gutter-2 island-2 right fixdiv">
-      <h1 class="peta whitetext max-length">Need a friend?</h1>
-      <p class="milli whitetext push-0 pad-b">Adopting a dog is not an easy decision that should be taken lightly, but it is the greatest thing you could do for these wonderful little beings. We match our dogs to your homes based on what is the best home for that particular dog. The adoption process is a very extensive process because you’re saving a life and we take that seriously.</p>
-      <p class="milli whitetext push-0 pad-b">Lets see what’s available in your area.</p>
-      <div class="">
-        <a class="text-center btn micro gutter bold" href="#">Learn More</a>
-      </div>
-    </div>
-  </section>
-
-  <div class="grid">
-
-    <div class="unit xs-1 s-1 m-1-2 l-1-2">
-      <a class="island hoverorg-1">
-        <div class="pin-rb island">
-        <h2 class="push-0 whitetext">Archie</h2>
-        <p class="push-0 whitetext">Male</p>
-        <p class="push-0 whitetext">Beagle</p>
-        <p class="push-0 whitetext">3yrs and 6months</p>
-      </div>
-      </a>
-    </div>
-
-    <div class="unit xs-1 s-1 m-1-2 l-1-2 colourhover">
-      <a class="island hoverorg-2">
-      <div class="pin-rb island">
-        <h2 class="push-0 whitetext">Becka</h2>
-        <p class="push-0 whitetext">Female</p>
-        <p class="push-0 whitetext">Pitbull</p>
-        <p class="push-0 whitetext">1yr and 9months</p>
-      </div>
-      </a>
-    </div>
-
-    <div class="unit xs-1 s-1 m-1-2 l-1-2">
-      <a class="island hoverorg-3">
-    <div class="pin-rb island">
-        <h2 class="push-0 whitetext">Levi</h2>
-        <p class="push-0 whitetext">Male</p>
-        <p class="push-0 whitetext">Australian Shepard</p>
-        <p class="push-0 whitetext">2months</p>
-      </div>
-      </a>
-    </div>
-
-    <div class="unit xs-1 s-1 m-1-2 l-1-2">
-      <a class="island hoverorg-4">
-        <div class="pin-rb island">
-        <h2 class="push-0 whitetext">Diesel</h2>
-        <p class="push-0 whitetext">Male</p>
-        <p class="push-0 whitetext">Border Collie</p>
-        <p class="push-0 whitetext">4yrs and 6months</p>
-      </div>
-      </a>
-    </div>
-
-    <div class="unit xs-1 s-1 m-1-2 l-1-2">
-      <a class="island hoverorg-5">
-      <div class="pin-rb island">
-        <h2 class="push-0 whitetext">Jazzy</h2>
-        <p class="push-0 whitetext">Female</p>
-        <p class="push-0 whitetext">Lab Mix</p>
-        <p class="push-0 whitetext">3yrs and 1months</p>
-      </div>
-      </a>
-    </div>
-
-    <div class="unit xs-1 s-1 m-1-2 l-1-2">
-      <a class="island hoverorg-6">
-        <div class="pin-rb island">
-        <h2 class="push-0 whitetext">Webber</h2>
-        <p class="push-0 whitetext">Male</p>
-        <p class="push-0 whitetext">Beagle</p>
-        <p class="push-0 whitetext">3yrs</p>
+  <main id="main" role="main" tabindex="0">
+    <section class="banner-2 embed embed-16by9">
+      <article class="pin-l max-width gutter-2 island-2 right embed-item">
+        <h1 class="peta whitetext max-length">Need a friend?</h1>
+        <p class="milli whitetext push-0 pad-b">Adopting a dog is not an easy decision that should be taken lightly, but it is the greatest thing you could do for these wonderful little beings. We match our dogs to your homes based on what is the best home for that particular dog. The adoption process is a very extensive process because you’re saving a life and we take that seriously.</p>
+        <p class="milli whitetext push-0 pad-b">Lets see what’s available in your area.</p>
+        <div>
+          <a class="text-center btn micro gutter bold" href="#">Learn More</a>
         </div>
-      </a>
+      </article>
+    </section>
+
+    <div class="grid">
+
+      <div class="unit xs-1 s-1 m-1-2 l-1-2 relative">
+        <a class="dog-hover" href="#">
+          <div class="absolute pin-rb island zindex-3">
+            <h2 class="push-0 whitetext">Archie</h2>
+            <p class="push-0 whitetext">Male</p>
+            <p class="push-0 whitetext">Beagle</p>
+            <p class="push-0 whitetext">3yrs and 6months</p>
+          </div>
+          <img class="img-flex" src="images/dog-1.jpg" alt="image of Archie the beagle 3 year old adoptable dog">
+        </a>
+      </div>
+
+      <div class="unit xs-1 s-1 m-1-2 l-1-2 colourhover relative">
+        <a class="dog-hover" href="#">
+          <div class="absolute pin-rb island">
+            <h2 class="push-0 whitetext">Becka</h2>
+            <p class="push-0 whitetext">Female</p>
+            <p class="push-0 whitetext">Pitbull</p>
+            <p class="push-0 whitetext">1yr and 9months</p>
+          </div>
+          <img class="img-flex" src="images/dog-2.jpg" alt="image of Archie the beagle 3 year old adoptable dog">
+        </a>
+      </div>
+
+      <div class="unit xs-1 s-1 m-1-2 l-1-2 colourhover relative">
+        <a class="dog-hover" href="#">
+          <div class="absolute pin-rb island">
+            <h2 class="push-0 whitetext">Levi</h2>
+            <p class="push-0 whitetext">Male</p>
+            <p class="push-0 whitetext">Australian Shepard</p>
+            <p class="push-0 whitetext">2months</p>
+          </div>
+          <img class="img-flex" src="images/dog-3.jpg" alt="image of Archie the beagle 3 year old adoptable dog">
+        </a>
+      </div>
+
+      <div class="unit xs-1 s-1 m-1-2 l-1-2 colourhover relative">
+        <a class="dog-hover" href="#">
+          <div class="absolute pin-rb island">
+            <h2 class="push-0 whitetext">Diesel</h2>
+            <p class="push-0 whitetext">Male</p>
+            <p class="push-0 whitetext">Border Collie</p>
+            <p class="push-0 whitetext">4yrs and 6months</p>
+          </div>
+          <img class="img-flex" src="images/dog-4.jpg" alt="image of Archie the beagle 3 year old adoptable dog">
+        </a>
+      </div>
+
+      <!-- <div class="unit xs-1 s-1 m-1-2 l-1-2 colourhover relative">
+        <a class="dog-hover">
+          <div class="absolute pin-rb island">
+            <h2 class="push-0 whitetext">Jazzy</h2>
+            <p class="push-0 whitetext">Female</p>
+            <p class="push-0 whitetext">Lab Mix</p>
+            <p class="push-0 whitetext">3yrs and 1month</p>
+          </div>
+          <img class="img-flex" src="images/dog-5.jpg" alt="image of Archie the beagle 3 year old adoptable dog">
+        </a>
+      </div>
+
+      <div class="unit xs-1 s-1 m-1-2 l-1-2 colourhover relative">
+        <a class="dog-hover">
+          <div class="absolute pin-rb island">
+            <h2 class="push-0 whitetext">Webber</h2>
+            <p class="push-0 whitetext">Male</p>
+            <p class="push-0 whitetext">Beagle</p>
+            <p class="push-0 whitetext">3yrs</p>
+          </div>
+          <img class="img-flex" src="images/dog-6.jpg" alt="image of Archie the beagle 3 year old adoptable dog">
+        </a>
+      </div> -->
+
+    </div>
+  </main>
+
+  <footer role="contentinfo" class="grid grid-middle">
+    <div class="unit xs-1-2 s-1-2 m-1-2 l-1-2">
+      <small class="gutter micro">SitWithMe ©2018</small>
     </div>
 
-  </div>
-</main>
+    <div class="unit xs-1-2 s-1-2 m-1-2 l-1-2 text-right pad-r">
 
-<footer class="grid grid-middle">
-  <div class="unit xs-1-2 s-1-2 m-1-2 l-1-2">
-    <small class="gutter micro">SitWithMe ©2018</small>
-  </div>
+      <ul class="list-group-inline island push-0">
+        <li>
+          <i class="icon i-size">
+            <a href="#">
+              <img class="img-flex" src="images/facebook.svg" alt="">
+            </a>
+          </i>
+        </li>
+        <li class="gutter-1-2">
+          <i class="icon i-size">
+            <a href="#">
+              <img class="img-flex" src="images/twitter.svg" alt="">
+            </a>
+          </i>
+        </li>
+        <li>
+          <i class="icon i-size">
+            <a href="#">
+              <img class="img-flex" src="images/instagram.svg" alt="">
+            </a>
+          </i>
+        </li>
+      </ul>
 
-  <div class="unit xs-1-2 s-1-2 m-1-2 l-1-2 text-right pad-r">
-
-    <ul class="list-group-inline island push-0">
-      <li class="pad-r">
-        <i class="icon i-48">
-          <a href="#">
-            <img class="img-flex" src="images/facebook.svg" alt="">
-          </a>
-        </i>
-      </li>
-      <li class="pad-r">
-        <i class="icon i-48">
-          <a href="#">
-            <img class="img-flex" src="images/twitter.svg" alt="">
-          </a>
-        </i>
-      </li>
-      <li>
-        <i class="icon i-48">
-          <a href="#">
-            <img class="img-flex" src="images/instagram.svg" alt="">
-          </a>
-        </i>
-      </li>
-    </ul>
-
-  </div>
-</footer>
+    </div>
+  </footer>
 
 </body>
 </html>
