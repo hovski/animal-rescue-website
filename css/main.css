@@ -45,7 +45,7 @@ html {
 .btn {
   background-color: #eb7808;
   border-radius: 30px;
-  border: 0px solid;
+  border: none;
 }
 
 .btn:hover {
