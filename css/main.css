@@ -44,28 +44,30 @@ html {
 
 .btn {
   background-color: #eb7808;
+  background-color: #464646;
   border-radius: 30px;
   border: none;
 }
 
 .btn:hover {
-  /* background-color: #1869ac; */
   background-color: #000;
+  border-color: #000;
 }
 
 .current {
-  /* color: #eb7808; */
   color: #000;
 }
 
+/* Chelle changed this contrast on the links */
+
 li a {
   color: #87c6f8;
+  color: #000;
 }
 
 li a:hover,
 li a:focus {
-  /* color: #1869ac; */
-  color: #000;
+  color: #e2e2e2;
 }
 
 .banner {
